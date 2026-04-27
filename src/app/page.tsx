@@ -270,7 +270,7 @@ export default function Home() {
               src="/Line 4.svg"
               alt="Описание картинки"
               width={600}
-              height={500}
+              height={600}
               className="my-8 "
             />
             <p className="text-color w-175">
