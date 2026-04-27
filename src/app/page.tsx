@@ -1,4 +1,5 @@
 "use client";
+import { motion } from "motion/react"
 import Image from "next/image";
 import { FAQItem } from "../components/FAQItem";
 import React, { useState } from "react";
@@ -202,7 +203,7 @@ export default function Home() {
     },
   ];
   return (
-    <header className="min-h-screen bg-backgroundheader">
+    <header className="min-h-screen ">
       <div className="bg-background text-color flex justify-between items-center py-8 px-41.5">
         <Link href="/" className="">
           <Image
@@ -415,7 +416,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="text-colorall px-52 pt-30 bg-background">
+        <section className="text-colorall px-52 pt-30">
           <div className="relative text-center">
             <h2 className="text-4xl font-bold mb-7.5 mt-30">
               Start Trading In Simple Process
@@ -468,7 +469,7 @@ export default function Home() {
         <section>
           <h1></h1>
           <p></p>
-          <div className="relative bg-backgroundheader mt-16 pb-16 mx-52">
+          <div className="relative mt-16 pb-16 mx-52">
             <span className="absolute top-0 left-0 w-full h-0.5 bg-linear-to-r from-gray-500/20 via-gray-500 to-gray-500/20"></span>
           </div>
           <article className="flex justify-between  w-504 h-156 mx-52">
@@ -517,11 +518,11 @@ export default function Home() {
               />
             </div>
           </article>
-          <div className="p-30 bg-backgroundheader">
+          <div className="p-30">
             <span></span>
           </div>
         </section>
-        <section className="bg-background py-30 px-41.5">
+        <section className=" py-30 px-41.5">
           <div className="pt-15 px-3 mx-auto overflow-hidden">
             <div
               className="flex transition-transform duration-500 ease-in-out gap-6 "
@@ -586,7 +587,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <div className="p-30 bg-backgroundheader"></div>
+        <div className="p-30"></div>
         <section className="flex justify-between items-center">
           <div className="py-36 px-42">
             <h1 className="text-colorall font-bold text-6xl mb-7.5">
@@ -639,8 +640,8 @@ export default function Home() {
             />
           </div>
         </section>
-        <div className="bg-backgroundHeader h-32"></div>
-        <section className="min-h-screen bg-backgroundheader px-6 py-30 font-sans">
+        <div className=" h-32"></div>
+        <section className="min-h-screen  px-6 py-30 font-sans">
           <div className="mx-auto max-w-397.5">
             <div className="mx-auto max-w-397.5 mb-15 text-center">
               <h2 className="mb-7.5 text-6xl font-bold tracking-tight text-colorall">
