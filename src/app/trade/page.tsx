@@ -2,7 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export default function BTC() {
+export default function Trade() {
   const BTC = [
     {
       coin: "BTC / Bitcoin",

@@ -13,7 +13,7 @@ export interface Coin {
   chartData: number[]; // упрощенно для мини-графика
 }
 
-export default function Home() {
+export default function Market() {
   const coin = Array(10).fill({
     pair: "Bitcoin / BTC",
     price: "$64,242.10",

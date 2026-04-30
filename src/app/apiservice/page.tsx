@@ -2,7 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export default function market() {
+export default function Apiservice() {
   return (
     <header>
       <div className="bg-background text-color flex justify-between items-center py-8 px-41.5">
