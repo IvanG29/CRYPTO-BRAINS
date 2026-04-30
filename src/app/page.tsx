@@ -1,5 +1,5 @@
 "use client";
-import { motion } from "motion/react"
+import { motion } from "motion/react";
 import Image from "next/image";
 import { FAQItem } from "../components/FAQItem";
 import React, { useState } from "react";
@@ -203,7 +203,7 @@ export default function Home() {
     },
   ];
   return (
-    <header className="min-h-screen ">
+    <header className="min-h-screen overflow-x-hidden">
       <div className="bg-background text-color flex justify-between items-center py-8 px-41.5">
         <Link href="/" className="">
           <Image
@@ -350,7 +350,7 @@ export default function Home() {
               <h2 className="text-6xl text-colorall font-bold">
                 Market Trends
               </h2>
-              <div className="flex gap-4 text-xl text-gray-400">
+              <div className="flex gap-4 text-xl transition drop-shadow-[0_0_28px_rgba(88,101,242,0.5)] hover:drop-shadow-[0_0_24px_rgba(88,101,242,0.8)] text-gray-400">
                 {[
                   "All",
                   "Top Gainers",
@@ -361,7 +361,7 @@ export default function Home() {
                 ].map((tab) => (
                   <button
                     key={tab}
-                    className="hover:text-white transition-colors"
+                    className="hover:text-colorall cursor-pointer  transition-color"
                   >
                     {tab}
                   </button>
@@ -450,8 +450,11 @@ export default function Home() {
                     {step.desc}
                   </p>
 
-                  <button className="flex justify-between gap-4 text-blue-500 hover:text-blue-400 text-base font-medium transition-colors">
-                    {step.btn}
+                  <button className="flex justify-between cursor-pointer gap-4 text-blue-500 hover:text-blue-400 text-base font-medium transition-colors">
+                    <Link href="/" className="">
+                      {step.btn}
+                    </Link>
+
                     <Image
                       src="/arrow-up-right.svg"
                       alt="Описание картинки"
@@ -465,10 +468,15 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <div className="bg-backgroundHeader h-32"></div>
+        <div className=" h-32"></div>
         <section>
-          <h1></h1>
-          <p></p>
+          <h2 className="text-6xl text-center font-bold mb-7.5 mt-30">
+            Why Choose Crypto Brains!
+          </h2>
+          <p className="text-center text-lg  mb-15">
+            When an unknown printer took a galley of type and scrambled it to
+            make a type specimen book.
+          </p>
           <div className="relative mt-16 pb-16 mx-52">
             <span className="absolute top-0 left-0 w-full h-0.5 bg-linear-to-r from-gray-500/20 via-gray-500 to-gray-500/20"></span>
           </div>
