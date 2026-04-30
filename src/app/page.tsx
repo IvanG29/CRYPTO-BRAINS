@@ -275,7 +275,7 @@ export default function Home() {
           </div>
           <div>
             <Image
-              src="/Svg.svg"
+              src="/SVG.svg"
               alt="Описание картинки"
               width={600}
               height={500}
