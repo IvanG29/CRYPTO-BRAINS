@@ -75,41 +75,30 @@ export default function Market() {
   return (
     <header className="min-h-screen ">
       <div className="bg-background text-color flex justify-between items-center py-8 px-41.5">
-        <Link href="/" className="">
+        <Link href="/">
           <Image
             src="/Logo.svg"
             alt="Описание картинки"
             width={200}
-            height={0}
-            className=" "
+            height={200}
           />
         </Link>
         <div>
           <nav className="flex justify-between gap-20">
             <li className="list-none text-xl hover:text-blue-500/80">
-              <Link href="/market" className="">
-                Market
-              </Link>
+              <Link href="/market">Market</Link>
             </li>
             <li className="list-none text-xl hover:text-blue-500/80">
-              <Link href="/trade" className="">
-                Trade
-              </Link>
+              <Link href="/trade">Trade</Link>
             </li>
             <li className="list-none text-xl hover:text-blue-500/80">
-              <Link href="/earn" className="">
-                Earn
-              </Link>
+              <Link href="/earn">Earn</Link>
             </li>
             <li className="list-none text-xl hover:text-blue-500/80">
-              <Link href="/about" className="">
-                About
-              </Link>
+              <Link href="/about">About</Link>
             </li>
             <li className="list-none text-xl hover:text-blue-500/80">
-              <Link href="/career" className="">
-                Career
-              </Link>
+              <Link href="/career">Career</Link>
             </li>
           </nav>
         </div>
@@ -168,7 +157,7 @@ export default function Market() {
         <section className="mx-41.5">
           <div className=" bg-backgroundHeader text-color p-6 rounded-xl border-gray-800">
             {/* Header / Tabs */}
-            <div className="flex justify-center  mb-3  gap-6 p-8 bg-background ">
+            <div className="flex justify-center mb-3 gap-6 p-8 bg-background">
               {[
                 "Watchlist",
                 "USDT",
@@ -191,8 +180,8 @@ export default function Market() {
               <div className="flex justify-center items-center">
                 <input
                   type="text"
-                  name=""
-                  id=""
+                  name="text"
+                  id="text"
                   placeholder="Поиск не работает"
                   className="border-2 p-2 rounded-xl bg-background"
                 />
@@ -226,7 +215,6 @@ export default function Market() {
                             alt="Описание картинки"
                             width={18}
                             height={18}
-                            className=" "
                           />
                           <span className="font-semibold">{coin.pair}</span>
                         </div>
@@ -272,8 +260,7 @@ export default function Market() {
                 src="/Logo.svg"
                 alt="Описание картинки"
                 width={150}
-                height={60}
-                className=" "
+                height={150}
               />
             </h1>
             <nav className="flex justify-between gap-5">
@@ -285,7 +272,6 @@ export default function Market() {
                     alt="Описание картинки"
                     width={25}
                     height={25}
-                    className=" "
                   />
                 </li>
                 <li>
@@ -294,7 +280,6 @@ export default function Market() {
                     alt="Описание картинки"
                     width={25}
                     height={25}
-                    className=" "
                   />
                 </li>
                 <li>
@@ -303,7 +288,6 @@ export default function Market() {
                     alt="Описание картинки"
                     width={25}
                     height={25}
-                    className=" "
                   />
                 </li>
                 <li>
@@ -321,7 +305,6 @@ export default function Market() {
                     alt="Описание картинки"
                     width={25}
                     height={25}
-                    className=" "
                   />
                 </li>
               </ul>
@@ -387,16 +370,12 @@ export default function Market() {
               </ul>
             </nav>
           </div>
-          <div className="  relative mt-10">
+          <div className="relative mt-10">
             <div className="absolute top-0 left-0 w-full h-0.5 bg-linear-to-r from-gray-500/20 via-gray-500 to-gray-500/20"></div>
             <div>
               <p></p>
-              <div>
-                <a href=""></a>
-              </div>
-              <div>
-                <a href=""></a>
-              </div>
+              <div></div>
+              <div></div>
             </div>
             <div>
               <button></button>

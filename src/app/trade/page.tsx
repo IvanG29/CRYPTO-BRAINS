@@ -25,41 +25,30 @@ export default function Trade() {
   return (
     <header className="min-h-screen ">
       <div className="bg-background text-color flex justify-between items-center py-8 px-41.5">
-        <Link href="/" className="">
+        <Link href="/">
           <Image
             src="/Logo.svg"
             alt="Описание картинки"
             width={200}
             height={200}
-            className=" "
           />
         </Link>
         <div>
           <nav className="flex justify-between gap-20">
             <li className="list-none text-xl hover:text-blue-500/80">
-              <Link href="/market" className="">
-                Market
-              </Link>
+              <Link href="/market">Market</Link>
             </li>
             <li className="list-none text-xl hover:text-blue-500/80">
-              <Link href="/trade" className="">
-                Trade
-              </Link>
+              <Link href="/trade">Trade</Link>
             </li>
             <li className="list-none text-xl hover:text-blue-500/80">
-              <Link href="/earn" className="">
-                Earn
-              </Link>
+              <Link href="/earn">Earn</Link>
             </li>
             <li className="list-none text-xl hover:text-blue-500/80">
-              <Link href="/about" className="">
-                About
-              </Link>
+              <Link href="/about">About</Link>
             </li>
             <li className="list-none text-xl hover:text-blue-500/80">
-              <Link href="/career" className="">
-                Career
-              </Link>
+              <Link href="/career">Career</Link>
             </li>
           </nav>
         </div>
@@ -73,8 +62,8 @@ export default function Trade() {
         </div>
       </div>
       <main className="grid grid-cols-[1fr_300px] gap-6 mx-12.5 my-6">
-        {BTC.map((BTC, index) => (
-          <div className="flex flex-col gap-6">
+        {BTC.map((item, index) => (
+          <div key={index} className="flex flex-col gap-6">
             <div className="grid grid-cols-[200px_1fr] gap-6">
               <div className="flex justify-center items-center gap-2 bg-zinc-800 p-4 rounded-lg">
                 <Image
@@ -82,9 +71,8 @@ export default function Trade() {
                   alt="Описание картинки"
                   width={18}
                   height={18}
-                  className=" "
                 />
-                {BTC.coin}
+                <span>{item.coin}</span>
                 <Image
                   src="/arrowDown.svg"
                   alt="Описание картинки"
@@ -115,8 +103,7 @@ export default function Trade() {
                 src="/Logo.svg"
                 alt="Описание картинки"
                 width={150}
-                height={60}
-                className=" "
+                height={150}
               />
             </h1>
             <nav className="flex justify-between gap-5">
@@ -128,7 +115,6 @@ export default function Trade() {
                     alt="Описание картинки"
                     width={25}
                     height={25}
-                    className=" "
                   />
                 </li>
                 <li>
@@ -137,7 +123,6 @@ export default function Trade() {
                     alt="Описание картинки"
                     width={25}
                     height={25}
-                    className=" "
                   />
                 </li>
                 <li>
@@ -146,7 +131,6 @@ export default function Trade() {
                     alt="Описание картинки"
                     width={25}
                     height={25}
-                    className=" "
                   />
                 </li>
                 <li>
@@ -155,7 +139,6 @@ export default function Trade() {
                     alt="Описание картинки"
                     width={25}
                     height={25}
-                    className=" "
                   />
                 </li>
                 <li>
@@ -164,7 +147,6 @@ export default function Trade() {
                     alt="Описание картинки"
                     width={25}
                     height={25}
-                    className=" "
                   />
                 </li>
               </ul>
@@ -230,16 +212,12 @@ export default function Trade() {
               </ul>
             </nav>
           </div>
-          <div className="  relative mt-10">
+          <div className="relative mt-10">
             <div className="absolute top-0 left-0 w-full h-0.5 bg-linear-to-r from-gray-500/20 via-gray-500 to-gray-500/20"></div>
             <div>
               <p></p>
-              <div>
-                <a href=""></a>
-              </div>
-              <div>
-                <a href=""></a>
-              </div>
+              <div></div>
+              <div></div>
             </div>
             <div>
               <button></button>

@@ -205,41 +205,30 @@ export default function Home() {
   return (
     <header className="min-h-screen overflow-x-hidden">
       <div className="bg-background text-color flex justify-between items-center py-8 px-41.5">
-        <Link href="/" className="">
+        <Link href="/">
           <Image
             src="/Logo.svg"
             alt="Описание картинки"
             width={200}
-            height={0}
-            className=" "
+            height={200}
           />
         </Link>
         <div>
           <nav className="flex justify-between gap-20">
             <li className="list-none text-xl hover:text-blue-500/80">
-              <Link href="/market" className="">
-                Market
-              </Link>
+              <Link href="/market">Market</Link>
             </li>
             <li className="list-none text-xl hover:text-blue-500/80">
-              <Link href="/trade" className="">
-                Trade
-              </Link>
+              <Link href="/trade">Trade</Link>
             </li>
             <li className="list-none text-xl hover:text-blue-500/80">
-              <Link href="/earn" className="">
-                Earn
-              </Link>
+              <Link href="/earn">Earn</Link>
             </li>
             <li className="list-none text-xl hover:text-blue-500/80">
-              <Link href="/about" className="">
-                About
-              </Link>
+              <Link href="/about">About</Link>
             </li>
             <li className="list-none text-xl hover:text-blue-500/80">
-              <Link href="/career" className="">
-                Career
-              </Link>
+              <Link href="/career">Career</Link>
             </li>
           </nav>
         </div>
@@ -361,7 +350,7 @@ export default function Home() {
                 ].map((tab) => (
                   <button
                     key={tab}
-                    className="hover:text-colorall cursor-pointer  transition-color"
+                    className="hover:text-colorall cursor-pointer transition-color"
                   >
                     {tab}
                   </button>
@@ -369,7 +358,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="flex justify-between  gap-8">
+            <div className="flex justify-between gap-8">
               {coins.map((coin) => (
                 <div
                   key={coin.symbol}
@@ -402,15 +391,14 @@ export default function Home() {
               ))}
             </div>
 
-            <div className=" mt-16  flex items-center text-center">
+            <div className=" mt-16 flex items-center text-center">
               <button className="flex justify-between cursor-pointer gap-2 mx-auto mb-30 items-center text-xl bg-blue-600 hover:bg-blue-700 px-12.5 py-4 rounded-sm font-semibold transition-all ">
                 See All Market
                 <Image
                   src="/arrow-up-right.svg"
                   alt="Описание картинки"
                   width={15}
-                  height={0}
-                  className=""
+                  height={15}
                 />
               </button>
             </div>
@@ -451,16 +439,13 @@ export default function Home() {
                   </p>
 
                   <button className="flex justify-between cursor-pointer gap-4 text-blue-500 hover:text-blue-400 text-base font-medium transition-colors">
-                    <Link href="/" className="">
-                      {step.btn}
-                    </Link>
+                    <Link href="/">{step.btn}</Link>
 
                     <Image
                       src="/arrow-up-right.svg"
                       alt="Описание картинки"
                       width={15}
-                      height={0}
-                      className=""
+                      height={15}
                     />
                   </button>
                 </div>
@@ -468,7 +453,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <div className=" h-32"></div>
+        <div className="h-32"></div>
         <section>
           <h2 className="text-6xl text-center font-bold mb-7.5 mt-30">
             Why Choose Crypto Brains!
@@ -521,7 +506,7 @@ export default function Home() {
                 src="/Card.png"
                 alt="Описание картинки"
                 width={750}
-                height={0}
+                height={750}
                 className="brightness-85 contrast-105 saturate-90  hover:drop-shadow-[0_0_90px_rgba(88,101,242,0.6)] transition delay-150 duration-300 ease-in-ou hover:-translate-y-5"
               />
             </div>
@@ -530,7 +515,7 @@ export default function Home() {
             <span></span>
           </div>
         </section>
-        <section className=" py-30 px-41.5">
+        <section className="py-30 px-41.5">
           <div className="pt-15 px-3 mx-auto overflow-hidden">
             <div
               className="flex transition-transform duration-500 ease-in-out gap-6 "
@@ -613,7 +598,6 @@ export default function Home() {
                   alt="Описание картинки"
                   width={32}
                   height={32}
-                  className=" "
                 />
                 App Store
               </button>
@@ -623,7 +607,6 @@ export default function Home() {
                   alt="Описание картинки"
                   width={32}
                   height={32}
-                  className=" "
                 />
                 Play Store
               </button>
@@ -633,7 +616,6 @@ export default function Home() {
                   alt="Описание картинки"
                   width={32}
                   height={32}
-                  className=" "
                 />
               </button>
             </div>
@@ -644,7 +626,6 @@ export default function Home() {
               alt="Описание картинки"
               width={1190}
               height={140}
-              className=""
             />
           </div>
         </section>
@@ -688,8 +669,7 @@ export default function Home() {
                 src="/Logo.svg"
                 alt="Описание картинки"
                 width={150}
-                height={60}
-                className=" "
+                height={150}
               />
             </h1>
             <nav className="flex justify-between gap-5">
@@ -701,7 +681,6 @@ export default function Home() {
                     alt="Описание картинки"
                     width={25}
                     height={25}
-                    className=" "
                   />
                 </li>
                 <li>
@@ -710,7 +689,6 @@ export default function Home() {
                     alt="Описание картинки"
                     width={25}
                     height={25}
-                    className=" "
                   />
                 </li>
                 <li>
@@ -719,7 +697,6 @@ export default function Home() {
                     alt="Описание картинки"
                     width={25}
                     height={25}
-                    className=" "
                   />
                 </li>
                 <li>
@@ -728,7 +705,6 @@ export default function Home() {
                     alt="Описание картинки"
                     width={25}
                     height={25}
-                    className=" "
                   />
                 </li>
                 <li>
@@ -737,7 +713,6 @@ export default function Home() {
                     alt="Описание картинки"
                     width={25}
                     height={25}
-                    className=" "
                   />
                 </li>
               </ul>
@@ -803,16 +778,12 @@ export default function Home() {
               </ul>
             </nav>
           </div>
-          <div className="  relative mt-10">
+          <div className="relative mt-10">
             <div className="absolute top-0 left-0 w-full h-0.5 bg-linear-to-r from-gray-500/20 via-gray-500 to-gray-500/20"></div>
             <div>
               <p></p>
-              <div>
-                <a href=""></a>
-              </div>
-              <div>
-                <a href=""></a>
-              </div>
+              <div></div>
+              <div></div>
             </div>
             <div>
               <button></button>

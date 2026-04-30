@@ -1,4 +1,3 @@
-
 "use client";
 import Image from "next/image";
 import Link from "next/link";
@@ -7,41 +6,30 @@ export default function Faq() {
   return (
     <header>
       <div className="bg-background text-color flex justify-between items-center py-8 px-41.5">
-        <Link href="/" className="">
+        <Link href="/">
           <Image
             src="/Logo.svg"
             alt="Описание картинки"
             width={200}
-            height={0}
-            className=" "
+            height={200}
           />
         </Link>
         <div>
           <nav className="flex justify-between gap-20">
             <li className="list-none text-xl hover:text-blue-500/80">
-              <Link href="/market" className="">
-                Market
-              </Link>
+              <Link href="/market">Market</Link>
             </li>
             <li className="list-none text-xl hover:text-blue-500/80">
-              <Link href="/trade" className="">
-                Trade
-              </Link>
+              <Link href="/trade">Trade</Link>
             </li>
             <li className="list-none text-xl hover:text-blue-500/80">
-              <Link href="/earn" className="">
-                Earn
-              </Link>
+              <Link href="/earn">Earn</Link>
             </li>
             <li className="list-none text-xl hover:text-blue-500/80">
-              <Link href="/about" className="">
-                About
-              </Link>
+              <Link href="/about">About</Link>
             </li>
             <li className="list-none text-xl hover:text-blue-500/80">
-              <Link href="/career" className="">
-                Career
-              </Link>
+              <Link href="/career">Career</Link>
             </li>
           </nav>
         </div>
@@ -54,9 +42,7 @@ export default function Faq() {
           </nav>
         </div>
       </div>
-      <main className="flex flex-col min-h-screen">
-
-      </main>
+      <main className="flex flex-col min-h-screen"></main>
       <footer className="bg-backgroundFooter button-0">
         <div className=" pt-30 px-52 ">
           <div className="flex justify-between items-center">
@@ -65,8 +51,7 @@ export default function Faq() {
                 src="/Logo.svg"
                 alt="Описание картинки"
                 width={150}
-                height={60}
-                className=" "
+                height={150}
               />
             </h1>
             <nav className="flex justify-between gap-5">
@@ -78,7 +63,6 @@ export default function Faq() {
                     alt="Описание картинки"
                     width={25}
                     height={25}
-                    className=" "
                   />
                 </li>
                 <li>
@@ -96,7 +80,6 @@ export default function Faq() {
                     alt="Описание картинки"
                     width={25}
                     height={25}
-                    className=" "
                   />
                 </li>
                 <li>
@@ -105,7 +88,6 @@ export default function Faq() {
                     alt="Описание картинки"
                     width={25}
                     height={25}
-                    className=" "
                   />
                 </li>
                 <li>
@@ -114,7 +96,6 @@ export default function Faq() {
                     alt="Описание картинки"
                     width={25}
                     height={25}
-                    className=" "
                   />
                 </li>
               </ul>
@@ -180,16 +161,12 @@ export default function Faq() {
               </ul>
             </nav>
           </div>
-          <div className="  relative mt-10">
+          <div className="relative mt-10">
             <div className="absolute top-0 left-0 w-full h-0.5 bg-linear-to-r from-gray-500/20 via-gray-500 to-gray-500/20"></div>
             <div>
               <p></p>
-              <div>
-                <a href=""></a>
-              </div>
-              <div>
-                <a href=""></a>
-              </div>
+              <div></div>
+              <div></div>
             </div>
             <div>
               <button></button>
