@@ -204,18 +204,19 @@ export default function Home() {
   ];
   return (
     <header className="min-h-screen overflow-x-hidden">
-      <div className="bg-background text-color flex justify-between items-center py-8 px-41.5">
+      <div className="bg-background  text-color flex justify-between items-center py-8 px-41.5">
         <Link href="/">
           <Image
             src="/Logo.svg"
             alt="Описание картинки"
             width={200}
             height={200}
+            className=""
           />
         </Link>
-        <div>
-          <nav className="flex justify-between gap-20">
-            <li className="list-none text-xl hover:text-blue-500/80">
+        <div className="xl:flex hidden">
+          <nav className="flex justify-between gap-20 ">
+            <li className="list-none text-xl  hover:text-blue-500/80">
               <Link href="/market">Market</Link>
             </li>
             <li className="list-none text-xl hover:text-blue-500/80">
@@ -232,9 +233,9 @@ export default function Home() {
             </li>
           </nav>
         </div>
-        <div>
+        <div className="">
           <nav className="flex justify-between items-center gap-5 text-colorall">
-            <li className="list-none text-xl">Log in</li>
+            <li className="hidden md:text list-none text-xl">Log in</li>
             <li className="list-none text-xl border-2 border-blue-500 p-2 rounded-2xl bg-blue-500">
               Sign up
             </li>
@@ -243,7 +244,7 @@ export default function Home() {
       </div>
       <main>
         <section className="flex justify-around items-center ">
-          <div className="mr-70">
+          <div className="">
             <div className="flex items-center gap-3">
               <div className="w-12 h-0.5 bg-blue-600"></div>
 
@@ -260,7 +261,7 @@ export default function Home() {
               alt="Описание картинки"
               width={600}
               height={600}
-              className="my-8 "
+              className="my-4"
             />
             <p className="text-color w-175">
               It is a long established fact that a reader will be distracted by
@@ -279,14 +280,14 @@ export default function Home() {
               alt="Описание картинки"
               width={600}
               height={500}
-              className="brightness-75 contrast-135 saturate-70  drop-shadow-[0_0_80px_rgba(88,101,242,0.5)] hover:drop-shadow-[0_0_60px_rgba(88,101,242,0.8)] transition delay-150 duration-300 ease-in-ou hover:-translate-y-5 "
+              className="brightness-60 contrast-135 saturate-100  drop-shadow-[0_0_80px_rgba(88,101,242,0.5)] hover:drop-shadow-[0_0_60px_rgba(88,101,242,0.8)] transition delay-150 duration-300 ease-in-ou hover:-translate-y-5 "
             />
           </div>
         </section>
         <section className="px-52 py-29">
           <div>
-            <nav className="flex justify-between  ">
-              <ul className="flex flex-wrap w-36 h-21.5 gap-6">
+            <nav className="flex justify-between items-center">
+              <ul className="flex flex-wrap w-36 h-21.5 gap-6 ">
                 <p className="text-color text-base">BTC / INR</p>
                 <li className="text-sm text-colorGreen">5.76%</li>
                 <span className="text-xl text-colorall">₹ 28,214,25.341</span>
